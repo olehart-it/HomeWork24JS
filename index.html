@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <form id="registration-form">
+        <label for="first-name">Імя:</label>
+        <input type="text" id="first-name" name="first-name" required><br>
+
+        <label for="last-name">Фамилия:</label>
+        <input type="text" id="last-name" name="last-name" required><br>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="text" id="birthdate" name="birthdate" required><br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="Мужчина" required>
+        <label for="male">Мужчина</label>
+        <input type="radio" id="female" name="gender" value="Женщина">
+        <label for="female">Женщина</label><br>
+
+        <label for="city">Город:</label>
+        <select id="city" name="city">
+            <option value="Київ">Киев</option>
+            <option value="Львів">Львов</option>
+            <option value="Харків">Харьков</option>
+        </select><br>
+
+        <label for="address">Адрес:</label>
+        <textarea id="address" name="address" rows="4"></textarea><br>
+
+        <label>Язык которым вы владеете :</label>
+        <input type="checkbox" id="language-ukr" name="language" value="Украинский">
+        <label for="language-ukr">Украинский</label>
+        <input type="checkbox" id="language-ukr" name="language" value="Немецкий">
+        <label for="language-ukr">Немецкий</label>
+        <input type="checkbox" id="language-eng" name="language" value="Английский">
+        <label for="language-eng">Английский</label><br>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <div id="table-container"></div>
+</body>
+</html>
